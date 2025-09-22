@@ -23,7 +23,7 @@ Features
 
 Folder Structure
 
-mern-auth/
+mern-auth-custom/
 ├── backend/
 │   ├── config/
 │   │   └── db.js
@@ -43,7 +43,6 @@ mern-auth/
 │   ├── .env
 │   ├── server.js
 │   └── package.json
-│
 ├── frontend/
 │   ├── public/
 │   │   └── index.html
@@ -67,7 +66,6 @@ mern-auth/
 │   │   └── index.js
 │   ├── .env
 │   └── package.json
-│
 └── README.md
 
 
