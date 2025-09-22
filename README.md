@@ -23,6 +23,7 @@ Features
 
 Folder Structure
 
+```text
 mern-auth-custom/
 ├── backend/
 │   ├── config/
