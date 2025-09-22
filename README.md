@@ -24,11 +24,10 @@ Features
 Folder Structure
 
 mern-auth/
-
 ├── backend/   # Node.js + Express API
-
+|
 ├── frontend/        # React.js frontend
-
+|
 └── README.md
 
 1. Backend Folder
