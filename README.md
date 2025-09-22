@@ -24,18 +24,31 @@ Features
 Folder Structure
 
 mern-auth/
+
 ├── backend/
+
 │   ├── config/
+
 │   │   └── db.js
+
 │   ├── controllers/
+
 │   │   ├── authController.js
+
 │   │   └── userController.js
+
 │   ├── middleware/
+
 │   │   ├── authMiddleware.js
+
 │   │   └── validateMiddleware.js
+
 │   ├── models/
+
 │   │   └── User.js
+
 │   ├── routes/
+
 │   │   ├── authRoutes.js
 │   │   └── userRoutes.js
 │   ├── utils/
