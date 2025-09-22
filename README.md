@@ -5,12 +5,19 @@ A full-stack MERN (MongoDB, Express, React, Node.js) authentication system with 
 
 Features
 -> User Signup & Login
+
 -> Google OAuth Login
+
 -> LinkedIn OAuth Login
+
 -> Forgot Password with OTP
+
 -> Reset & Change Password
+
 -> JWT Authentication
+
 -> Protected Profile Page
+
 -> Full frontend form validation
 
 Folder Structure
