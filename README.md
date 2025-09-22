@@ -23,7 +23,7 @@ Features
 
 Folder Structure
 
-```text
+```
 mern-auth-custom/
 ├── backend/
 │   ├── config/
@@ -68,6 +68,7 @@ mern-auth-custom/
 │   ├── .env
 │   └── package.json
 └── README.md
+```
 
 
 > Backend Setup
