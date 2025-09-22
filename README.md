@@ -1,4 +1,5 @@
 MERN Authentication System 🔐
+
 A full-stack MERN (MongoDB, Express, React, Node.js) authentication system with social login, OTP password reset, and JWT-based protected routes.
 
 
@@ -14,7 +15,7 @@ Features
 
 Folder Structure
 mern-auth/
-├── backend/         # Node.js + Express API
+├── backend/   # Node.js + Express API
 ├── frontend/        # React.js frontend
 └── README.md
 
