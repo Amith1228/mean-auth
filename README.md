@@ -72,10 +72,13 @@ mern-auth/
 
 
 > Backend Setup
+
 cd backend
+
 npm install
 
 > Create .env in /backend:
+
 PORT=5000
 
 MONGO_URI=your_mongodb_connection_string
@@ -95,21 +98,28 @@ LINKEDIN_CLIENT_ID=your_linkedin_client_id
 LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
 
 > Start server:
-npm run dev
+
+*npm run dev
 
 Backend runs on http://localhost:5000.
 
 
 > Frontend Setup
+
 cd frontend
+
 npm install
 
 > Create .env in /frontend:
+
 REACT_APP_API_URL=http://localhost:5000/api
+
 REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
+
 REACT_APP_LINKEDIN_CLIENT_ID=your_linkedin_client_id
 
 > Start frontend:
+
 npm start
 
 Frontend runs on http://localhost:3000.
