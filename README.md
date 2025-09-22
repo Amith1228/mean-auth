@@ -77,13 +77,21 @@ npm install
 
 > Create .env in /backend:
 PORT=5000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret
+
 EMAIL_USER=your_email@gmail.com
+
 EMAIL_PASS=your_email_password
+
 GOOGLE_CLIENT_ID=your_google_client_id
+
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 LINKEDIN_CLIENT_ID=your_linkedin_client_id
+
 LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret
 
 > Start server:
