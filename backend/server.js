@@ -1,42 +1,19 @@
-// backend/server.js
-
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
-
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
+const cors = require("cors");
+
+dotenv.config();
+connectDB();
 
 const app = express();
-
-// Middleware
-app.use(cors({
-  origin: process.env.FRONTEND_URL || "*", // Allow your frontend URL
-  credentials: true
-}));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
-// Routes
 app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes);
+app.use("/api/user", userRoutes);
 
-// Root route
-app.get("/", (req, res) => {
-  res.send("MERN Auth Backend is running!");
-});
-
-// MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log("MongoDB connected"))
-.catch((err) => console.error("MongoDB connection error:", err));
-
-// Dynamic Port for Vercel
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
