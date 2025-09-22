@@ -24,59 +24,51 @@ Features
 Folder Structure
 
 mern-auth/
-
-├── backend/   # Node.js + Express API
-|
-├── frontend/        # React.js frontend
-|
-└── README.md
-
-1. Backend Folder
-backend/
-├── config/
-│   └── db.js                # MongoDB connection
-├── controllers/
-│   ├── authController.js     # Signup, Login, Forgot/Reset Password, Social login
-│   └── userController.js     # Profile & user-related operations
-├── middleware/
-│   ├── authMiddleware.js     # JWT token verification
-│   └── validateMiddleware.js # Input validation
-├── models/
-│   └── User.js               # Mongoose User schema
-├── routes/
-│   ├── authRoutes.js         # Routes for authentication
-│   └── userRoutes.js         # Routes for user/profile
-├── utils/
-│   └── sendOTPEmail.js       # OTP email sending utility
-├── .env                      # Environment variables
-├── server.js                 # Express server entry
-└── package.json              # Backend dependencies & scripts
-
-
-2. Frontend Folder
-frontend/
-├── public/
-│   └── index.html            # Main HTML template
-├── src/
-│   ├── components/
-│   │   ├── SignupForm.js
-│   │   ├── LoginForm.js
-│   │   ├── ForgotPassword.js
-│   │   ├── ResetPassword.js
-│   │   └── ChangePassword.js
-│   ├── context/
-│   │   └── AuthContext.js    # Auth state management
-│   ├── pages/
-│   │   ├── Home.js
-│   │   └── Profile.js
-│   ├── services/
-│   │   └── api.js            # API calls to backend
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── userController.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── validateMiddleware.js
+│   ├── models/
+│   │   └── User.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── userRoutes.js
 │   ├── utils/
-│   │   └── validate.js       # Frontend input validation functions
-│   ├── App.js                # React Router + main App
-│   └── index.js              # React DOM render
-├── .env                      # Frontend environment variables
-└── package.json              # Frontend dependencies & scripts
+│   │   └── sendOTPEmail.js
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── SignupForm.js
+│   │   │   ├── LoginForm.js
+│   │   │   ├── ForgotPassword.js
+│   │   │   ├── ResetPassword.js
+│   │   │   └── ChangePassword.js
+│   │   ├── context/
+│   │   │   └── AuthContext.js
+│   │   ├── pages/
+│   │   │   ├── Home.js
+│   │   │   └── Profile.js
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── utils/
+│   │   │   └── validate.js
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── .env
+│   └── package.json
+│
+└── README.md
 
 
 > Backend Setup
